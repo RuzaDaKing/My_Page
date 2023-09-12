@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/My_Page/static/css/main.2f70ab94.css",
+    "main.js": "/My_Page/static/js/main.71bbc5ad.js",
+    "static/media/NightCity.jpg": "/My_Page/static/media/NightCity.b9e9a59973fc0029b712.jpg",
+    "static/media/Profilovka.jpg": "/My_Page/static/media/Profilovka.cb5a130bc8ba629b32b0.jpg",
+    "static/media/logo_github.svg": "/My_Page/static/media/logo_github.f0843d48b095543a71d4e4f6809ca9d6.svg",
+    "static/media/logo_linkedin.svg": "/My_Page/static/media/logo_linkedin.afa128b66f32a0f76622bb869d2a8e0b.svg",
+    "static/media/book.svg": "/My_Page/static/media/book.6628d421642bf3ed130d60deaf577548.svg",
+    "index.html": "/My_Page/index.html",
+    "static/media/flask.svg": "/My_Page/static/media/flask.eabb19ac8e4514016ac1fec0b4d69731.svg",
+    "main.2f70ab94.css.map": "/My_Page/static/css/main.2f70ab94.css.map",
+    "main.71bbc5ad.js.map": "/My_Page/static/js/main.71bbc5ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f70ab94.css",
+    "static/js/main.71bbc5ad.js"
+  ]
+}
