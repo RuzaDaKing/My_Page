@@ -7,32 +7,43 @@ import "../App.css";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(true);
-
+  const navbuttons = [
+    {
+      label: <img src={book} alt="About" title="About Me" />,
+      link: "",
+    },
+    {
+      label: <img src={flask} alt="Projects" title="My Projects" />,
+      link: "",
+    },
+    {
+      label: <img src={logo_github} alt="GitHub" title="GitHub" />,
+      link: "https://github.com/RuzaDaKing",
+    },
+    {
+      label: <img src={logo_linkedin} alt="Linked-In" title="Linked-In" />,
+      link: "https://www.linkedin.com/in/filip-ruzicka/",
+    },
+  ];
   return (
     <>
       <div
         onClick={() => {
-          console.log("Click on the menu!");
           setOpen(!isOpen);
         }}
         className="Menu"
       >
         <div style={{ visibility: isOpen ? "visible" : "hidden" }}>
-          <div className="circle deg-0">
-            <img src={book} alt="About" title="About Me" />
-          </div>
-          <div className="circle deg-90">
-            <img src={flask} alt="Projects" title="My Projects" />
-          </div>
-          <div className="circle deg-180">
-            <a href="https://github.com/RuzaDaKing">
-              <img src={logo_github} alt="GitHub" title="GitHub" />
-            </a>
-          </div>
-          <div className="circle deg-270">
-            <a href="https://www.linkedin.com/in/filip-ruzicka/">
-              <img src={logo_linkedin} alt="Linked-In" title="Linked-In" />
-            </a>
+          <div className="Menu">
+            {navbuttons.map((btn, index) => (
+              <a
+                key={index}
+                href={btn.link}
+                className={`orbit-button orbit-${index + 1}`}
+              >
+                {btn.label}
+              </a>
+            ))}
           </div>
         </div>
       </div>

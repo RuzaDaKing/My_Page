@@ -52,7 +52,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 
@@ -66,7 +66,7 @@
   align-items: center;
   cursor: pointer;
 }
-
+/* 
 .circle {
   display: block;
   position: absolute;
@@ -113,7 +113,7 @@
   border-bottom: 0.3em solid white;
   border-radius: 50%;
   transform: rotate(150deg) translate(42vmin) rotate(-150deg);
-}
+} */
 
 .ProjectsPage {
   position: fixed;
@@ -123,4 +123,87 @@
   height: 100%;
   background-size: cover;
   background-color: black;
+}
+
+.ProjectsPage p {
+  color: white;
+}
+
+/* 
+.orbit-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 100px auto;
+} */
+
+/* 
+.center-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+} */
+
+/* Shared style for orbit buttons */
+.orbit-button {
+  display: block;
+  position: absolute;
+  width: 9vmin;
+  height: 9vmin;
+  padding: 2vmin;
+  /* margin: -17.5%; */
+  background: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+  /* Velikost tlacitek */
+  width: 10vmin;
+  height: 10vmin;
+
+  text-align: center;
+
+  /* Border effect */
+  border: 0.5em solid black;
+  border-top: 0.3em solid white;
+  border-bottom: 0.3em solid white;
+  border-radius: 51%;
+
+  /* Orbiting */  
+  animation: orbit 30s linear infinite;
+  /* radius */
+  transform-origin: 20px 20px; 
+}
+
+/* Positioning each button with different delays */
+.orbit-1 {
+  animation-delay: 0s;
+}
+
+.orbit-2 {
+  animation-delay: -7.5s;
+}
+
+.orbit-3 {
+  animation-delay: -15s;
+}
+
+.orbit-4 {
+  animation-delay: -22.5s;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(-180deg) translateX(37vmin) rotate(180deg);
+  }
+  to {
+    transform: rotate(180deg) translateX(37vmin) rotate(-180deg);
+  }
 }
